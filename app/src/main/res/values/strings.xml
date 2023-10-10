@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PersonalLista</string>
+    <string name="title_string">Registering av Personal</string>
+    <string name="string_et1">För och efternamn</string>
+    <string name="string_et2">Ålder</string>
+    <string name="string_et3">Lön </string>
+    <string name="btn_string">Registrera personal</string>
+    <string name="btn2_string">Se personallista</string>
+    <string name="toast_wrong_input">Fyll i alla fält</string>
+    <string name="toast_registrered">Person Registrerad</string>
+    <string name="tv_string_title">Lista Över Personal</string>
+    <string name="btn_back_string">Tillbaka</string>
+</resources>
