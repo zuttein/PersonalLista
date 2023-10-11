@@ -7,28 +7,57 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="@dimen/witdth_et"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/title_string"
-        android:textSize="@dimen/title_ts"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardview_height"
+        android:backgroundTint="@color/black"
+        android:padding="@dimen/padding_cv"
+        app:cardCornerRadius="@dimen/corner_radius_main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/bakrund"
+            android:layout_gravity="right"/>
+
+
+        <!-- Titel -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/witdth_et"
+            android:layout_height="@dimen/height_et"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="@string/title_string"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_ts"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.206" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!-- Inmatningsfält -->
     <EditText
         android:id="@+id/name"
-        android:layout_width="@dimen/witdth_et"
-        android:layout_height="@dimen/height_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height_new"
         android:layout_marginStart="@dimen/margins_et"
         android:layout_marginEnd="@dimen/margins_et"
-        android:inputType="text"
         android:hint="@string/string_et1"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -38,8 +67,8 @@
 
     <EditText
         android:id="@+id/age"
-        android:layout_width="@dimen/witdth_et"
-        android:layout_height="@dimen/height_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height_new"
         android:layout_marginStart="@dimen/margins_et"
         android:layout_marginTop="@dimen/margins_et"
         android:layout_marginEnd="@dimen/margins_et"
@@ -51,15 +80,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintVertical_bias="0.0" />
+
     <EditText
         android:id="@+id/salary"
-        android:layout_width="@dimen/witdth_et"
-        android:layout_height="@dimen/height_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height_new"
         android:layout_marginStart="@dimen/margins_et"
         android:layout_marginTop="@dimen/margins_et"
         android:layout_marginEnd="@dimen/margins_et"
-        android:inputType="number"
         android:hint="@string/string_et3"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -67,33 +97,37 @@
         app:layout_constraintTop_toBottomOf="@+id/age"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Knappar -->
+
     <Button
         android:id="@+id/register"
         android:layout_width="@dimen/btn_width"
         android:layout_height="@dimen/btn_height"
         android:layout_marginTop="@dimen/margins_et"
+        android:backgroundTint="@color/black"
         android:text="@string/btn_string"
         android:textSize="@dimen/btn_textsize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintVertical_bias="0.731" />
 
     <Button
         android:id="@+id/employee_list"
         android:layout_width="@dimen/btn_width"
         android:layout_height="@dimen/btn_height"
         android:layout_marginTop="@dimen/margins_et"
+        android:backgroundTint="@color/black"
         android:text="@string/btn2_string"
         android:textSize="@dimen/btn_textsize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintVertical_bias="0.731" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

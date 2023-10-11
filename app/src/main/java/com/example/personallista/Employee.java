@@ -6,6 +6,9 @@ public class Employee {
     String salary;
 
 
+
+    //Settar och gettar
+
     public String getName() {
         return name;
     }
@@ -30,6 +33,8 @@ public class Employee {
         this.salary = salary;
     }
 
+
+    //Konstruktor till name, age och salary
     public Employee(String name, String age, String salary) {
         this.name = name;
         this.age = age;
