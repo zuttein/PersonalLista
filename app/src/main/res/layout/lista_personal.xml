@@ -4,11 +4,14 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:backgroundTint="@color/color_purple"
+    android:backgroundTint="@color/black"
     android:padding="@dimen/padding_cv"
     android:layout_margin="@dimen/margins_et"
     app:cardCornerRadius="@dimen/corner_radius">
 
+
+
+    <!-- Xml till Adaptern -->
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
@@ -16,6 +19,8 @@
         android:layout_gravity="start"
         android:padding="@dimen/padding_cv"
         android:textColor="@color/white"
+        android:textSize="@dimen/tv_textsize_adapter"
+        android:textStyle="italic"
         tools:text="Dennis Nilsson"/>
 
     <TextView
@@ -23,17 +28,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_adapter"
         android:padding="@dimen/padding_cv"
         android:textColor="@color/white"
-        tools:text="26"/>
+        android:textSize="@dimen/tv_textsize_adapter"
+        android:textStyle="italic"
+        tools:text="26" />
+
     <TextView
         android:id="@+id/tv_salary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:textStyle="italic"
+        android:textSize="@dimen/tv_textsize_adapter"
         android:padding="@dimen/padding_cv"
         android:textColor="@color/white"
-        tools:text="100 000kr"/>
+        tools:text="20 000kr"/>
 
 
 
