@@ -3,16 +3,22 @@ package com.example.personallista;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//Controller för views och models
+
+//Viewsen består av xml filerna
+
 public class MainActivity extends AppCompatActivity {
     EditText nameInput;
     EditText ageInput;
     EditText salaryInput;
+
 
     DataManager dataManager = new DataManager();
 
@@ -27,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         salaryInput = findViewById(R.id.salary);
         Button registerButton = findViewById(R.id.register);
         Button employeeListButton = findViewById(R.id.employee_list);
+
 
 
         registerButton.setOnClickListener(new View.OnClickListener() {

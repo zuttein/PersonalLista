@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 
+//Controller för views och att hämta in employees och skickar in i listviewn
+
 public class PersonalAdapter extends ArrayAdapter<Employee> {
     public PersonalAdapter(Context context, List<Employee> employees) {
         super(context, 0, employees);}

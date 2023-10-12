@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+    <!-- Cardview till Bild -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="match_parent"
@@ -19,10 +19,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/image_witdh"
+            android:layout_height="@dimen/image_witdh"
             app:srcCompat="@drawable/bakrund"
-            android:layout_gravity="right"/>
+            android:layout_gravity="end"/>
 
 
         <!-- Titel -->

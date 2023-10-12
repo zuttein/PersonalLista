@@ -16,4 +16,5 @@
     <dimen name="height_cardview_lv">80dp</dimen>
     <dimen name="cardview_height">200dp</dimen>
     <dimen name="et_height_new">50dp</dimen>
+    <dimen name="image_witdh">200dp</dimen>
 </resources>
