@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
-
+//Controller för Listviewn och knapp
 public class personal_lista extends AppCompatActivity {
 
     ListView personalLista;

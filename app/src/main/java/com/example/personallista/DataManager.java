@@ -2,6 +2,8 @@ package com.example.personallista;
 
 import java.util.ArrayList;
 
+//Model som agerar "databas" för adaptern
+
 public class DataManager {
     // En ArrayList som används för att lagra anställda objekt.
     public static ArrayList<Employee> employees = new ArrayList <>();

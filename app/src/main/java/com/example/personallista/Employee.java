@@ -5,6 +5,8 @@ public class Employee {
     String age;
     String salary;
 
+    //Controller som skickar till adaptern som sen kan skicka till listviewn
+
 
 
     //Settar och gettar
